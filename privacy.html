@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — GigPe</title>
+  <meta name="description" content="How GigPe handles data, including its use of Android's AccessibilityService to estimate ride earnings." />
+  <meta name="theme-color" content="#0B4F6C" />
+  <link rel="canonical" href="https://your-site-name.netlify.app/privacy.html" />
+  <link rel="icon" type="image/png" href="https://play-lh.googleusercontent.com/BAKuyJz12hUKnm1jyETT7eK1MnT-sRy3w2XmaCbbeh6ZxwbR2XKA9VIV8yiuKr5ghgM32AwigrdZzHfO8pUIEQ=s64" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="https://play-lh.googleusercontent.com/BAKuyJz12hUKnm1jyETT7eK1MnT-sRy3w2XmaCbbeh6ZxwbR2XKA9VIV8yiuKr5ghgM32AwigrdZzHfO8pUIEQ=s96" alt="" width="36" height="36" />
+        GigPe
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#about">About</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="legal-page">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: <span id="year"></span></p>
+
+      <p>This policy explains what information GigPe ("the app," "we," "us") accesses, why, and how it's handled. GigPe is developed by Swara Software Technologies for use by rideshare drivers.</p>
+
+      <h2>Summary</h2>
+      <p>As declared on our Google Play Store listing, GigPe does not collect personal data and does not share data with third parties. The sections below explain the one exception that makes the app work: reading on-screen ride-request text via Android's Accessibility Service.</p>
+
+      <h2>Accessibility Service usage</h2>
+      <p>GigPe uses the Android AccessibilityService API, with your explicit, revocable permission, to read ride-request details displayed by supported rideshare apps on your screen. This is used solely to calculate and display an estimated earning for that ride before you accept or decline it.</p>
+      <ul>
+        <li>The service is turned on only after you grant permission in your device's Accessibility settings.</li>
+        <li>It is used only to detect ride-request text needed to estimate earnings — not to monitor unrelated apps or activity.</li>
+        <li>It does not collect passwords, payment details, personal messages, or other on-screen content unrelated to ride requests.</li>
+        <li>You can disable it at any time from your device's Accessibility settings, and GigPe will stop reading screen content immediately.</li>
+      </ul>
+
+      <h2>Account information</h2>
+      <p>Creating a GigPe account requires basic login details to secure access to the app. This information is used only to authenticate you and is not sold or shared with advertisers or data brokers.</p>
+
+      <h2>What we don't do</h2>
+      <ul>
+        <li>We don't sell or share your data with third parties.</li>
+        <li>We don't use the Accessibility Service to track your location, browsing, or activity outside of ride-request screens.</li>
+        <li>We don't serve third-party ads inside the app.</li>
+      </ul>
+
+      <h2>This website</h2>
+      <p>This marketing website itself is static — it doesn't use analytics cookies or track visitors. It loads fonts from Google Fonts, which may process standard technical request data (like IP address) as part of serving those font files.</p>
+
+      <h2>Children's privacy</h2>
+      <p>GigPe is intended for adult rideshare drivers and is not directed at children. We do not knowingly collect data from children.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If our data practices change, we'll update this page and revise the "last updated" date above.</p>
+
+      <h2>Contact us</h2>
+      <p>Questions about this policy can be sent to <a href="mailto:abhiramkurreli@gmail.com">abhiramkurreli@gmail.com</a> or <a href="mailto:ritesh@swarasoftwaretechnologies.com">ritesh@swarasoftwaretechnologies.com</a>.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="mailto:abhiramkurreli@gmail.com">Contact</a>
+      </div>
+      <p class="footer-copy">© <span id="year-footer"></span> GigPe · Swara Software Technology.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('year-footer').textContent = new Date().getFullYear();</script>
+</body>
+</html>
