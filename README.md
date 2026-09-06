@@ -6,7 +6,7 @@ A static marketing site for the GigPe Android app. No build step, no backend —
 
 ```
 gigpe-website/
-├── index.html          Home page (hero, about, features, screenshots, contact)
+├── index.html          Home page (hero, story blocks, features, contact)
 ├── privacy.html        Privacy Policy
 ├── terms.html          Terms & Conditions
 ├── 404.html            Custom "page not found" page
@@ -14,20 +14,25 @@ gigpe-website/
 ├── sitemap.xml          List of pages for search engines
 ├── netlify.toml         Netlify configuration (headers, caching)
 └── assets/
-    ├── css/style.css    All styling
+    ├── css/style.css    All styling — colors, layout, everything
     ├── js/main.js       Mobile menu + footer year
-    └── images/          (empty — see "About the images" below)
+    └── images/          Just the logo (gigpe-icon.png)
 ```
 
-## About the images
+## Colors — one place to change them all
 
-To get you a working preview immediately, the screenshots and app icon are linked directly from your Play Store listing's image CDN (`play-lh.googleusercontent.com`). This works, but for a production site it's better to:
+Every color on the site is a CSS variable at the top of `assets/css/style.css`:
 
-1. Download your screenshots and icon from the Play Store Console (or the listing page).
-2. Save them into `assets/images/`.
-3. In `index.html`, `privacy.html`, and `terms.html`, replace the long `play-lh.googleusercontent.com/...` URLs with local paths like `assets/images/screenshot-1.png`.
+```css
+--color-primary: #0044C7;   /* the logo blue — used for buttons, links, headings, icons */
+--color-bg-tint: #EEF3FE;   /* soft background behind the visual cards */
+```
 
-This makes the site faster, and means it keeps working even if Google changes those CDN URLs.
+Change `--color-primary` and the whole site (buttons, nav links, icons, borders) updates together — there's nothing to hunt down elsewhere.
+
+## The ride-request "screenshots"
+
+Rather than real app screenshots (which showed a competitor's branding baked into the image), the cards under "Cab / Bike / Auto" are built with plain HTML and CSS — no image files at all. That means they're always sharp at any screen size, load instantly, and are easy to edit: search `index.html` for `ride-card` or `route-card` to change the numbers, labels, or add more cards.
 
 ## Before you deploy — find and replace
 

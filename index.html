@@ -4,20 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GigPe — Know Your Ride Earnings Before You Accept</title>
-  <meta name="description" content="GigPe helps Uber and Ola drivers in India see estimated ride earnings before accepting a trip, so every ride you take is a ride worth taking." />
-  <meta name="theme-color" content="#0B4F6C" />
+  <meta name="description" content="GigPe helps rideshare drivers in India see estimated ride earnings before accepting a trip, so every ride you take is a ride worth taking." />
+  <meta name="theme-color" content="#0044C7" />
 
   <!-- Open Graph / social preview.
-       IMPORTANT: replace the two "your-site-name" URLs below once your
-       Netlify site is live, so shared links show the right preview. -->
+       IMPORTANT: replace the "your-site-name" URLs below with your
+       real Netlify URL (e.g. gigpeindia.netlify.app). -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="GigPe — Know Your Ride Earnings Before You Accept" />
   <meta property="og:description" content="Estimate ride earnings before accepting trips. Built for rideshare drivers in India." />
-  <meta property="og:image" content="https://play-lh.googleusercontent.com/BAKuyJz12hUKnm1jyETT7eK1MnT-sRy3w2XmaCbbeh6ZxwbR2XKA9VIV8yiuKr5ghgM32AwigrdZzHfO8pUIEQ=s512" />
+  <meta property="og:image" content="https://your-site-name.netlify.app/assets/images/gigpe-icon.png" />
   <meta property="og:url" content="https://your-site-name.netlify.app/" />
   <link rel="canonical" href="https://your-site-name.netlify.app/" />
 
-  <link rel="icon" type="image/png" href="https://play-lh.googleusercontent.com/BAKuyJz12hUKnm1jyETT7eK1MnT-sRy3w2XmaCbbeh6ZxwbR2XKA9VIV8yiuKr5ghgM32AwigrdZzHfO8pUIEQ=s64" />
+  <link rel="icon" type="image/png" href="assets/images/gigpe-icon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +25,6 @@
 
   <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- Structured data so Google understands this page is about an app -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -47,10 +46,15 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
+  <!-- Small top banner — easy to edit or delete in assets/css/style.css (.announcement-bar) -->
+  <div class="announcement-bar">
+    Now live for Android drivers across India · <a href="https://play.google.com/store/apps/details?id=com.rider.gigpe" target="_blank" rel="noopener">Get the app →</a>
+  </div>
+
   <header class="site-header">
     <div class="container">
       <a class="brand" href="#top">
-        <img src="https://play-lh.googleusercontent.com/BAKuyJz12hUKnm1jyETT7eK1MnT-sRy3w2XmaCbbeh6ZxwbR2XKA9VIV8yiuKr5ghgM32AwigrdZzHfO8pUIEQ=s96" alt="" width="36" height="36" />
+        <img src="assets/images/gigpe-icon.png" alt="" width="36" height="36" />
         GigPe
       </a>
 
@@ -62,17 +66,23 @@
         <a href="privacy.html">Privacy</a>
       </nav>
 
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm" href="https://play.google.com/store/apps/details?id=com.rider.gigpe" target="_blank" rel="noopener">
+          <span class="btn-label-full">Get the App</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
     </div>
   </header>
 
   <main id="main">
     <!-- ================= HERO ================= -->
     <section class="hero" id="top">
-      <div class="container">
+      <div class="container hero-grid">
         <div class="hero-copy">
+          <p class="hero-overline">For cab, bike &amp; auto drivers</p>
           <h1>Know what a ride pays before you accept it</h1>
           <p>GigPe reads incoming ride requests on your phone and shows you an estimated earning right away — so you can decide in seconds whether a trip is worth taking.</p>
 
@@ -81,64 +91,54 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3.5c0-.4.2-.8.5-1L13 12l-9.5 9.5c-.3-.2-.5-.6-.5-1v-17zM14 13l2.5 2.5-10 5.8L14 13zm3.3-1.3L20.5 10c.7.4.7 1.6 0 2l-3.2 1.9L14.7 12l2.6-2.3zM14 11 6.5 3.2l10 5.8L14 11z"/></svg>
               Get it on Google Play
             </a>
-            <a class="btn btn-ghost" href="#screenshots">See it in action</a>
+            <a class="btn btn-ghost" href="#screenshots">See how it works</a>
           </div>
 
           <div class="hero-meta">
-            <div><strong>1K+</strong><span>Active installs</span></div>
+            <div><strong>3K+</strong><span>Active installs</span></div>
             <div><strong>3.5★</strong><span>Play Store rating</span></div>
             <div><strong>Free</strong><span>No subscription</span></div>
           </div>
         </div>
 
-        <div class="phone-mock">
-          <div class="phone-frame">
-            <img src="https://play-lh.googleusercontent.com/yPez_0OThjtXcppVgeSsOcTf8nyE_PpkBGpH63MsWeHEh49uukrABxJSn4ifgz_67P9IurCuxPYhkOEbX3K4Aw=w526-h296" alt="GigPe app screen showing an incoming ride request with earnings estimate" width="300" height="533" loading="eager" />
-          </div>
-          <div class="earnings-popup">
-            <span class="dot" aria-hidden="true"></span>
-            <div>
-              <strong>₹185 estimated</strong>
-              <span>This ride · 12 min</span>
-            </div>
-          </div>
+        <!-- Hero visual — provided image, used as-is -->
+        <div class="hero-image-wrap">
+          <img src="assets/images/hero-splash-scene.webp" alt="GigPe app open screen: Smart co-pilot for cab and bike drivers, showing a cab and a delivery rider on a city street with an estimated fare of ₹185 for this ride" width="760" height="1013" loading="eager" />
         </div>
       </div>
     </section>
 
-    <div class="route-divider" role="presentation"></div>
-
-    <!-- ================= ABOUT ================= -->
-    <section class="section about" id="about">
+    <!-- ================= ABOUT / BUILT FOR DRIVERS ================= -->
+    <section class="section section-tint" id="about">
       <div class="container">
-        <div class="about-text">
-          <h2>Built for drivers who don't want to guess</h2>
-          <p>Every ride request is a decision — accept it, and you're committed. GigPe gives Uber and Ola drivers across India a clear earnings estimate the moment a request comes in, using information already shown on your screen.</p>
-          <div class="about-points">
-            <div class="about-point">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-              <p>Works alongside your existing rideshare app — no separate driver account to manage.</p>
-            </div>
-            <div class="about-point">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-              <p>Estimates appear before you tap accept, not after.</p>
-            </div>
-            <div class="about-point">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-              <p>No personal data collected — Google Play's data safety section confirms this.</p>
-            </div>
+        <div class="story-grid">
+          <div class="story-caption">
+            <h2>Built for drivers who don't want to guess</h2>
+            <p>Every ride request is a decision — accept it, and you're committed. GigPe gives drivers across India a clear earnings estimate the moment a request comes in, using information already shown on your screen.</p>
+            <ul class="check-list">
+              <li>
+                <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                <span>Works alongside your existing rideshare app — no separate driver account to manage.</span>
+              </li>
+              <li>
+                <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                <span>Estimates appear before you tap accept, not after.</span>
+              </li>
+              <li>
+                <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                <span>No ride data leaves your phone — Google Play's data safety section confirms this.</span>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="about-image">
-          <div class="phone-frame">
-            <img src="https://play-lh.googleusercontent.com/sFfca4kJeqnwCWmF87mS8HXo-pPcosDtTNkv9bWJkC2KxFtpseNIe3ZL4Mhq_56wYfkIdz3JXPdJ8FDGRnhskg=w526-h296" alt="GigPe app dashboard screen" width="300" height="533" loading="lazy" />
+          <div class="story-visual">
+            <img src="assets/images/screenshot-stack.webp" alt="GigPe screen showing three incoming ride requests rated good, average, and bad with fare per km and per hour" width="640" height="853" loading="lazy" />
           </div>
         </div>
       </div>
     </section>
 
     <!-- ================= FEATURES ================= -->
-    <section class="section section-bg" id="features">
+    <section class="section" id="features">
       <div class="container">
         <div class="section-intro">
           <h2>Everything you need, nothing you don't</h2>
@@ -180,29 +180,25 @@
       </div>
     </section>
 
-    <!-- ================= SCREENSHOTS ================= -->
-    <section class="section" id="screenshots">
+    <!-- ================= SCREENSHOTS / LOOK INSIDE THE APP ================= -->
+    <section class="section section-tint" id="screenshots">
       <div class="container">
         <div class="section-intro">
           <h2>A look inside the app</h2>
           <p>A few screens from GigPe, straight from the Play Store listing.</p>
         </div>
-
         <div class="screenshot-scroller" role="region" aria-label="App screenshots" tabindex="0">
           <div class="screenshot-item">
-            <div class="phone-frame"><img src="https://play-lh.googleusercontent.com/yPez_0OThjtXcppVgeSsOcTf8nyE_PpkBGpH63MsWeHEh49uukrABxJSn4ifgz_67P9IurCuxPYhkOEbX3K4Aw=w526-h296" alt="GigPe screenshot 1: ride request with earnings estimate" loading="lazy" /></div>
+            <img src="assets/images/hero-splash-scene.webp" alt="GigPe app open screen: Smart co-pilot for cab and bike drivers" width="760" height="1013" loading="lazy" />
           </div>
           <div class="screenshot-item">
-            <div class="phone-frame"><img src="https://play-lh.googleusercontent.com/sFfca4kJeqnwCWmF87mS8HXo-pPcosDtTNkv9bWJkC2KxFtpseNIe3ZL4Mhq_56wYfkIdz3JXPdJ8FDGRnhskg=w526-h296" alt="GigPe screenshot 2: app dashboard" loading="lazy" /></div>
+            <img src="assets/images/screenshot-detail-1.webp" alt="GigPe screen showing a good-value Bike ride confirmed with pickup and drop-off details" width="393" height="786" loading="lazy" />
           </div>
           <div class="screenshot-item">
-            <div class="phone-frame"><img src="https://play-lh.googleusercontent.com/3GEJPqycHNrQrZzjBjX1ZdvGxLoHN-prMfP7KXT3pjbhA9udII_WVbDcKC_ZX9-D3H3bAOTuvRJZ8X5Jj6HLXA=w526-h296" alt="GigPe screenshot 3" loading="lazy" /></div>
+            <img src="assets/images/screenshot-detail-2.webp" alt="GigPe screen showing an average-value Cab ride with pickup and drop-off details" width="393" height="786" loading="lazy" />
           </div>
           <div class="screenshot-item">
-            <div class="phone-frame"><img src="https://play-lh.googleusercontent.com/YeZ_qdevvVv7eMDkx4aXR1YvlL825U3YPR-oD5XWb7TG-lzFIx5l7ZFbbirCjIXHecgve2oucTRO18H-wjVE=w526-h296" alt="GigPe screenshot 4" loading="lazy" /></div>
-          </div>
-          <div class="screenshot-item">
-            <div class="phone-frame"><img src="https://play-lh.googleusercontent.com/XHeosOfz3YMCRmarwXieh-9xaV6de6jqvJn0xl5Qtw81muB7tuI2msXhkMYDRHH42_vzgAHZRCARWzTHJ3mP=w526-h296" alt="GigPe screenshot 5" loading="lazy" /></div>
+            <img src="assets/images/screenshot-detail-3.webp" alt="GigPe screen showing a low-value Bike ride with pickup and drop-off details" width="393" height="786" loading="lazy" />
           </div>
         </div>
       </div>
@@ -223,7 +219,7 @@
     </section>
 
     <!-- ================= CONTACT ================= -->
-    <section class="section section-bg" id="contact">
+    <section class="section section-tint" id="contact">
       <div class="container">
         <div class="section-intro">
           <h2>Get in touch</h2>
@@ -256,7 +252,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.3-9A5.4 5.4 0 0 1 12 5.5 5.4 5.4 0 0 1 21.3 12c-2.3 4.5-9.3 9-9.3 9z"/></svg>
             <div>
               <h3>Based in</h3>
-              <span>Ahmedabad, Gujarat, India</span>
+              <span>Hyderabad, India</span>
             </div>
           </div>
         </div>
@@ -274,7 +270,7 @@
       <a class="social-link" href="https://www.linkedin.com/company/gigpeindia/" target="_blank" rel="noopener" aria-label="GigPe on LinkedIn">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2 8.98h6V21H2V8.98zM9 8.98h5.6v1.7h.08c.78-1.4 2.68-2.9 5.52-2.9 5.9 0 7 3.9 7 8.9V21h-6v-5.75c0-1.37-.02-3.13-1.9-3.13-1.9 0-2.2 1.5-2.2 3.03V21H9V8.98z"/></svg>
       </a>
-      <p class="footer-copy">© <span id="year"></span> GigPe · Swara Software Technology. Not affiliated with Uber Technologies, Inc.</p>
+      <p class="footer-copy">© <span id="year"></span> GigPe · Swara Software Technology. Not affiliated with any specific rideshare platform.</p>
     </div>
   </footer>
 
