@@ -39,7 +39,7 @@
 
 /* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
   margin: 0;
   font-family: var(--font-body);
@@ -47,6 +47,7 @@ body {
   background: var(--color-bg);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
@@ -231,25 +232,49 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   box-shadow: 0 30px 60px -20px rgba(11, 27, 40, 0.35);
 }
 
-/* Horizontally scrolling screenshot strip */
+/* Horizontally scrolling screenshot strip — height-based sizing so every
+   image keeps its true aspect ratio (no stretching, squashing, or cropping).
+   Only this strip scrolls horizontally; the page itself never does. */
 .screenshot-scroller {
   display: flex;
-  gap: var(--space-3);
+  align-items: flex-start;
+  gap: 18px;
   overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
   padding: 0.5rem 0.25rem 1.5rem;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x proximity;
+  max-width: 100%;
 }
 .screenshot-scroller::-webkit-scrollbar { height: 8px; }
 .screenshot-scroller::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 8px; }
+
 .screenshot-item {
   flex: 0 0 auto;
   scroll-snap-align: start;
-  width: 220px;
+  height: 260px;
 }
 .screenshot-item img {
-  width: 100%;
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: none;
   border-radius: 20px;
   box-shadow: 0 16px 32px -16px rgba(11, 27, 40, 0.3);
+}
+
+@media (min-width: 600px) {
+  .screenshot-item { height: 320px; }
+}
+@media (min-width: 768px) {
+  .screenshot-scroller { gap: 22px; justify-content: safe center; }
+  .screenshot-item { height: 360px; }
+}
+@media (min-width: 1024px) {
+  .screenshot-item { height: 420px; }
+}
+@media (min-width: 1280px) {
+  .screenshot-item { height: 460px; }
 }
 
 /* ---------- Story blocks (visual card on tint, caption below) ---------- */
